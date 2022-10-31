@@ -18,23 +18,23 @@ img {
   h3{
     font-family: cursive;
     text-align: center;
-    color: darkred;
+    color: black;
   }
   h2 {
     font-family: Tangerine;
     text-align: left;
-    color: aqua;
+    color: black;
 
   }
 
   p {
    font-family: sans-serif;
-   color: red;
+   color: black;
    size: 1.2em;
    text-indent: 30px;
   }
   body {
-    background-color: gray;
+    background-color: lightgray;
     margin-left: 120px;
     margin-right: 120px;
   }
