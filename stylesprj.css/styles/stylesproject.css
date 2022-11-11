@@ -7,7 +7,7 @@ a {
 }
 
 h1 {
-  font-family: sans-serif;
+  font-family: 'Courier New', Courier, monospace;
   text-align: center;
   color: red;
   position: relative;
@@ -84,4 +84,10 @@ text-align: left;
 
 .dropdown:hover .dropdown-content {
 display: block;
+}
+
+.navy a:hover {
+  background-color: red;
+  border-radius: 10px;
+  color: white;
 }
