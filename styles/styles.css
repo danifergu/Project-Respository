@@ -1,0 +1,192 @@
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  text-align: center;
+  color: red;
+  position: relative;
+}
+
+h3{
+  font-family: cursive;
+  text-align: center;
+  color: red;
+}
+h2 {
+  font-family: Tangerine;
+  text-align: left;
+  color: black;
+  font-weight: 15;
+  font-size: 15;
+
+}
+p {
+ font-family: sans-serif;
+ color: black;
+ size: 1.2em;
+ text-indent: 30px;
+}
+body {
+  background-color: white;
+  margin-left: 120px;
+  margin-right: 120px;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+background-color: red;
+}
+
+
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: #f9f9f9;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+}
+
+.dropdown-content a {
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+display: block;
+}
+
+.navy a:hover {
+  background-color: red;
+  border-radius: 10px;
+  color: white;
+}
+
+ul {
+  list-style-type: none;
+  margin: -10px;
+  padding: 0px;
+  overflow: hidden;
+  background-color: lightskyblue;
+}
+
+li{float: left;}
+
+li a {
+  display: block;
+  color:white;
+  padding: 15px;
+  font-size: 18px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 800;
+  font-family: 'Rubik Mono One', sans-serif;
+}
+
+caption {
+color: red;
+font-family: 'Courier New', Courier, monospace;
+text-align: center;
+font-size: 30px;
+}
+
+#table1 {
+  margin-right: auto;
+  margin-bottom: auto;
+}
+
+#searchbar {
+margin-top: 20px;
+float: auto;
+}
+
+.slideshow-container {
+  max-width: 500px;
+  position: relative;
+  margin: auto;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin:0px 2px;
+  background-color: grey;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.5s ease;
+}
+
+.active {
+  background-color: black;
+}
+
+#intro1 {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: red;
+}
+
+.text {
+  color: red;
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: medium;
+  font-weight: bold;
+}
+
+img {
+  border-color: black;
+  border-width: 15px;
+}
+
+#audio {
+  position: absolute;
+  margin-left: 30%;
+}
+
+#ptyv {
+  float: left;
+  padding: 5%;
+}
+
+.footer{
+  background-color: black;
+  padding: 50px 0;
+  display: block;
+  width: 50;
+  overflow: hidden;
+  box-sizing: border-box;
+  position: fixed;
+  height: 60px;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+.innerfooter{
+  display: block;
+  margin: 0 auto;
+  width: 1100px;
+  height: 100%;
+}
+
+.innerfooter .logocontainer{
+  width: 35%;
+  float: left;
+  height: 0%;
+  display: block;
+}
+
+.innerfooter .logocontainer img{
+width: 60px;
+height: auto;
+}

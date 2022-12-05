@@ -1,16 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>Feedback form for website</title>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Info</title>
+    <link rel="stylesheet" href="styles/styles.css">
     <link rel="icon" href="images/Flag_of_Panama.svg.webp" type="image/x-icon">
-    <style>
-        
-    </style>
-    </head>
-    <body>
-        <h1>Feedback</h1>
+</head>
+<body>  
+<nav>
+  <ul>
+    <li><a class="logo" href="index.html"><img src="images/Flag_of_Panama.svg.webp" alt="logo" height="53" title="logo"></a></li>
+        <li class="navy"><a href="index.html">Home</a></li>
+        <li class="navy"><a href="food.html">Food</a></li>
+        <li class="navy"><a href="maps.html">Maps</a></li>
+        <li class="navy"><a href="history.html">History</a></li>
+        <li class="navy"><a href="feedback.html">Feedback</a></li>
+        <li class="navy"><a href="sitemap.html">Sitemap</a></li>
+        <li>
+          <input type="text" name="Search" id="searchbar" placeholder="Search" maxlength="100" >
+        </li>
+  </ul>
+</nav>
+<br>
         <form method="post" action="https://oim-apis.herokuapp.com/form">
         <fieldset class="info">
             <legend><span style="font-weight: bold;">Your Information:</span></legend>
@@ -22,6 +35,7 @@
                 name="Name"
                 maxlength="100"
                 placeholder="Enter your name here"
+                required
                 />
             </div>
             <div>
@@ -32,6 +46,7 @@
                 name="Email Address"
                 maxlength="100"
                 placeholder="Enter your email here"
+                required
                 />
             </div>
                 </select>
