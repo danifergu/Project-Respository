@@ -23,13 +23,43 @@
         </li>
   </ul>
 </nav>
-<div class="footer">
-    <div class="innerfooter">
-         <div class="logocontainer">
-            <img src="images/Flag_of_Panama.svg.webp" alt="" height="200px" width="200px">
-         </div>
-    </div>
-
+<br><br>
+<h1 class="center">Different types of Maps of Panama!</h1>
+<br>
+<div class="center">
+  <img
+    alt="Maps"
+    src="images/General-Map.jpg"
+    title="Map name"
+    id="panama-image"
+  />
 </div>
-<body>
-</head>
+<div class="center">
+  <button>General Map</button>
+  <button>Physical Map</button>
+  <button>Province Map</button>
+</div>
+<br><br><br><br><br><br>
+<footer class="footer">
+    <p>&copy; <a href="index.html">ptytravelinfo.com</a></p>
+  </footer>
+<script>
+  var buttons = document.querySelectorAll("button")
+  
+    for (var button of buttons) {
+      button.addEventListener('click', function(event) {
+    var name=this.innerHTML
+    var image=name.toLowerCase()
+    image=image.replace(' ','-')
+    document.querySelector("#panama-image").src='images/'+image+'.jpg'
+    document.querySelector("#panama-image").style.border='5px solid '+colors[name]
+    document.querySelector("h1").innerHTML=name
+    for (let i = 0; i < buttons.length; i++) {
+      buttons[i].style.backgroundColor = "white";
+    }
+    this.style.backgroundColor = "silver";  
+      })
+    }
+</script>
+</body>
+</html>

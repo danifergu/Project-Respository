@@ -23,9 +23,9 @@
         </li>
   </ul>
 </nav>
-<h1 class="intro1">Have you ever wanted to go to Panama, but didn't know what to do?</h1>
 <br>
-<h1 class="intro1">Here is the perfect website for you!</h1>
+<h1 class="intro1">Have you ever wanted to visit Panama, but didn't know anything about the country?<br>Here is the perfect website for you!</h1>
+<br>
 <br>
 <div class="slideshow-container">
   <div class="mySlides fade">
@@ -48,12 +48,10 @@
     <span class="dot"></span> 
   </div>
   <br>
-  <br>
-  <table>
-    <tr>
-      <td></td>
-    </tr>
-  </table>
+  <br><br>
+  <footer class="footer">
+    <p>&copy; <a href="index.html">ptytravelinfo.com</a></p>
+  </footer>
   <script>
     let slideIndex = 0;
     showSlides();
@@ -74,6 +72,18 @@
       dots[slideIndex-1].className += " active";
       setTimeout(showSlides, 2000); 
         }
+        let demo = document.querySelector('.intro1');
+            let c = 0;
+
+            window.addEventListener('wheel', function(event) {
+              if (event.deltaY < 0) {
+              c--;
+              demo.style.color='red'; 
+              } else if (event.deltaY > 0) {
+              c++;
+              demo.style.color='blue';
+              }
+            });
   </script>
 </body>
 </html>

@@ -75,6 +75,7 @@ ul {
   padding: 0px;
   overflow: hidden;
   background-color: lightskyblue;
+  width: 100%;
 }
 
 li{float: left;}
@@ -135,12 +136,12 @@ float: auto;
 .text {
   color: red;
   text-align: center;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-size: medium;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 40px;
   font-weight: bold;
 }
 
-img {
+.img {
   border-color: black;
   border-width: 15px;
 }
@@ -155,16 +156,6 @@ img {
   padding: 5%;
 }
 
-.footer{
-  background-color: black;
-  padding: 50px 0;
-  display: block;
-  width: 50;
-  overflow: hidden;
-  box-sizing: border-box;
-  position: fixed;
-  height: 60px;
-}
 
 *{
   margin: 0;
@@ -189,4 +180,63 @@ img {
 .innerfooter .logocontainer img{
 width: 60px;
 height: auto;
+}
+
+.flex-container{
+  display: flex;
+  height: 100px;
+  align-items: stretch;
+  background-color: lightskyblue;
+  justify-content: center;
+  width: 100%;
+}
+
+.flex-container > div {
+  color: white;
+  margin: 10px;
+  width: 30px;
+  text-align: center;
+  line-height: 50px;
+  font-size: 18px;
+  font-family: 'Rubik Mono One', sans-serif;
+}
+
+.sitemaplist{
+color: black;
+}
+
+img.ptyv:hover {
+  filter: url(filters.svg#grayscale);
+  filter: gray;
+  -webkit-filter: grayscale(1);
+}
+img.imgclass{
+  filter: none;
+  -webkit-filter: grayscale(0);
+}
+
+.footer{
+background-color: skyblue;
+color: white;
+text-align: center;
+padding: 20px;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.center{
+  text-align: center;
+}
+
+.table{
+  color: red;
+  font-size: 15px;
+  font-weight: 700;
+  padding: 6px;
+}
+
+.listrecipe{
+  padding: 75px;
+  font-size: 20px;
+  color: blue;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
